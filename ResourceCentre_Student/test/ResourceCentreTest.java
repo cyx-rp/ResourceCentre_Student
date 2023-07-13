@@ -144,6 +144,7 @@ public class ResourceCentreTest {
 				testOutput += String.format("%-10s %-30s %-10s %-10s %-20s\n","CB0012", "HUAWEI Magicbook 100+", "Yes", "", "Win 10");
 				// Test that the details are displayed correctly
 				assertEquals("Test that the display is correct.", testOutput, allChromebook);
+				//test
 			}
 	
 	@Test
