@@ -155,32 +155,19 @@ public class ResourceCentre {
 				output += String.format("%-10s %-30s %-10s %-10s %-20s\n", chromebookList.get(i).getAssetTag(),
 					chromebookList.get(i).getDescription(), 
 					ResourceCentre.showAvailability(chromebookList.get(i).getIsAvailable()),
-<<<<<<< HEAD
-					chromebookList.get(i).getDueDate(),chromebookList.get(i).getOs());
-			}
-		}
-=======
 					chromebookList.get(i).getDueDate(), chromebookList.get(i).getOs());
 			}
 		}
 		
->>>>>>> branch 'master' of https://github.com/cyx-rp/ResourceCentre_Student.git
 		return output;
 	}
 	public static void viewAllChromebook(ArrayList<Chromebook> chromebookList) {
 		// write your code here
-<<<<<<< HEAD
-		ResourceCentre.setHeader("CHROMEBOOK LIST");
-		String output = String.format("%-10s %-30s %-10s %-10s %-20s\n", "ASSET TAG", "DESCRIPTION",
-				"AVAILABLE", "DUE DATE","OS");
-		 output += retrieveAllChromebook(chromebookList);
-=======
 		ResourceCentre.setHeader("CAMCORDER LIST");
 		String output = String.format("%-10s %-30s %-10s %-10s %-20s\n", "ASSET TAG", "DESCRIPTION",
 				"AVAILABLE", "DUE DATE","OPERATING SYSTEM");
 		
 		output = retrieveAllChromebook(chromebookList);
->>>>>>> branch 'master' of https://github.com/cyx-rp/ResourceCentre_Student.git
 		System.out.println(output);
 	}
 
@@ -220,7 +207,7 @@ public class ResourceCentre {
 		return cb;
 		
 	}	
-	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cc1) {
+	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
 		// write your code here
 		Chromebook item;
 		for(int i = 0; i < chromebookList.size(); i++) {

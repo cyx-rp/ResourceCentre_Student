@@ -133,17 +133,6 @@ public class ResourceCentreTest {
 	public void testRetrieveAllChromebook() {
 		//fail("Not yet implemented");
 		// write your code here
-<<<<<<< HEAD
-		//Test Case 1
-				// Test if Item list is not null and empty
-				assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
-				assertEquals("Test that the Chromebook arraylist is empty.", 0, chromebookList.size());
-				// Attempt to retrieve the chromebook
-				String allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
-				String testOutput = "";
-				// Test if the output is empty
-				assertEquals("Test that nothing is displayed", testOutput, allChromebook);
-=======
 		
 		//Test Case 1
 				// Test if Item list is not null and empty
@@ -186,34 +175,7 @@ public class ResourceCentreTest {
 				// Test that the details are displayed correctly
 				assertEquals("Test that the display is correct.", testOutput, allChromebook);
 	}
->>>>>>> branch 'master' of https://github.com/cyx-rp/ResourceCentre_Student.git
 
-				//Test Case 2
-				ResourceCentre.addChromebook(chromebookList, cb1);
-				ResourceCentre.addChromebook(chromebookList, cb2);
-				// Test that the list is not empty
-				assertEquals("Test that Chromebook arraylist size is 2.", 2, chromebookList.size());
-				// Attempt to retrieve the Chromebook 
-				allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
-				testOutput = String.format("%-10s %-30s %-10s %-10s %-20s\n","CB0011", "My Google Chromebook 1st", "Yes", "", "Mac OS");
-				testOutput += String.format("%-10s %-30s %-10s %-10s %-20s\n","CB0012", "HUAWEI Magicbook 100+", "Yes", "", "Win 10");
-				// Test that the details are displayed correctly
-				assertEquals("Test that the display is correct.", testOutput, allChromebook);
-
-				//Test Case 3
-				cb3.setIsAvailable(false);
-				ResourceCentre.addChromebook(chromebookList, cb3);
-				assertEquals("Test that Chromebook arraylist size is 2.", 3, chromebookList.size());
-				assertFalse("Test that the last item in the arraylist is not available", chromebookList.get(2).getIsAvailable());
-				// Attempt to retrieve the Chromebook
-				allChromebook= ResourceCentre.retrieveAllChromebook(chromebookList);
-				testOutput = String.format("%-10s %-30s %-10s %-10s %-20s\n","CB0011", "My Google Chromebook 1st", "Yes", "", "Mac OS");
-				testOutput += String.format("%-10s %-30s %-10s %-10s %-20s\n","CB0012", "HUAWEI Magicbook 100+", "Yes", "", "Win 10");
-				// Test that the details are displayed correctly
-				assertEquals("Test that the display is correct.", testOutput, allChromebook);
-				//test
-			}
-	
 	@Test
 	public void testDoLoanCamcorder() {
 
